@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_diseases"
+        android:title="Diseases"
+        android:icon="@drawable/ic_diseases"/>
+    <item
+        android:id="@+id/nav_market"
+        android:title="Market"
+        android:icon="@drawable/ic_market"/>
+    <item
+        android:id="@+id/nav_hosp"
+        android:title="Hospitalisation"
+        android:icon="@drawable/ic_hospitalisation"/>
+    <item
+        android:id="@+id/nav_announcement"
+        android:title="Anouncements"
+        android:icon="@drawable/ic_announcements"/>
+
+
+</menu>

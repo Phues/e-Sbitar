@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificationActivity">
+
+    <ImageView
+        android:id="@+id/verificationBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_arrow_small_left__1_"
+        app:tint="#0AB2AB" />
+
+    <ImageView
+        android:id="@+id/animation_image_view"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/verificationAnimation"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/email_verification" />
+
+    <TextView
+        android:id="@+id/VerificationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verificationAnimation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-35dp"
+        android:text="VERIFY YOUR EMAIL!"
+        android:textColor="#0AB2AB"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/VerificationDescreption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VerificationText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:textSize="16sp"
+        android:layout_marginEnd="35dp"
+        android:gravity="center_horizontal"
+        android:text="Please check your email and click on the link to activate your account" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VerificationDescreption"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/mainbtn"
+        android:text="Continue"
+        android:elevation="4dp"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

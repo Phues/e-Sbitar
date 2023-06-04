@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    tools:context=".DiseasesFragment"
+    android:background="#F5F8FE">
+
+    <ImageButton
+        android:id="@+id/settingsBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mainbtn"
+        android:src="@drawable/ic_menu_burger" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/settingsBtn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:text="E-Sbitar"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/search_btn"
+        android:layout_width="40dp"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_searchmain"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/docback"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/search_btn"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+
+            android:layout_marginStart="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diseases"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover diseases and \ntheir symptoms"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/doctor"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recview"
+        android:layout_width="match_parent"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>
